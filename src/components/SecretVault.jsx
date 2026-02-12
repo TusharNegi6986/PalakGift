@@ -123,7 +123,7 @@ const SecretVault = () => {
               }}
             >
               <img 
-                src="src/assets/images/special_memory.jpeg" // Update with your image path
+                src="images/special_memory.jpeg" // Update with your image path
                 alt="Vault Memory"
                 style={{ width: '100%', height: '100%', objectFit: 'cover' }}
               />

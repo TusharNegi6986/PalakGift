@@ -7,37 +7,37 @@ const Timeline = () => {
       date: "25 Dec 2025",
       title: "Where it all started",
       desc: "The day when we meet for the very first time, This day was really unexpected yet bueatiful",
-      img: "src/assets/images/story1.jpeg", // Replace with your local paths
+      img: "src/assets/images/story1.jpeg", // Updated to public path
     },
     {
       date: "26 Dec 2025",
       title: "Special Day",
-      desc: "We dont have photos of our most important dayyy....the day we was planning for and we were reallyy exited about this dayyy...but it ended with a mess but still very memorable one...you holded my hand and said 'kya tum mujhe apne sth kedarnath jane ka mauka dogi'. That day changed my life and now im the most happiest girl",
-      img: "src/assets/images/26.jpg",
+      desc: "We dont have photos of our most important dayyy....you holded my hand and said 'kya tum mujhe apne sth kedarnath jane ka mauka dogi'. That day changed my life and now im the most happiest girl",
+      img: "src/assets/images/26.jpg", // Updated to public path
     },
     {
       date: "27 Dec 2025",
       title: "Our Proper date ",
       desc: "Our proper date...we met again..again this day was specialll tooo...damnn every dayy feels special with you.",
-      img: "src/assets/images/story2.jpeg",
+      img: "src/assets/images/story2.jpeg", // Updated to public path
     },
     {
       date: "28 Dec 2025",
       title: "Another special Day",
-      desc: "You kissed on my palm and after that u blushed so hard that u  hided ur face with my hands..",
-      img: "src/assets/images/story3.jpeg",
+      desc: "You kissed on my palm and after that u blushed so hard that u hided ur face with my hands..",
+      img: "src/assets/images/story3.jpeg", // Updated to public path
     },
     {
       date: "28 Dec 2025",
       title: "Confession",
       desc: "Confessed our feelings",
-      img: "src/assets/images/story4.jpeg",
+      img: "src/assets/images/story4.jpeg", // Updated to public path
     },
     {
       date: "Today - 14 Feb 2026",
       title: "Happy Birthday!",
       desc: "Cheers to many more years!",
-      img: "src/assets/images/story5.jpeg",
+      img: "src/assets/images/story5.jpeg", // Updated to public path
     },
   ];
 
@@ -107,7 +107,6 @@ const Timeline = () => {
                 boxShadow: "0 15px 35px rgba(0,0,0,0.2)",
               }}
             >
-              {/* --- IMAGE ADDITION START --- */}
               <div
                 style={{
                   width: "100%",
@@ -128,7 +127,6 @@ const Timeline = () => {
                   }}
                 />
               </div>
-              {/* --- IMAGE ADDITION END --- */}
 
               <span
                 style={{

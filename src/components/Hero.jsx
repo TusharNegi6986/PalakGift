@@ -9,6 +9,7 @@ const Hero = ({ name, date }) => {
 
   const hearts = Array.from({ length: 40 });
   
+  // Updated src paths to point to /images/ inside the public folder
   const collageImages = [
     { src: 'src/assets/images/img1.jpeg', top: '8%', left: '8%', rotate: -8, size: '150px', delay: 0 },
     { src: 'src/assets/images/img2.jpeg', top: '12%', right: '10%', rotate: 6, size: '130px', delay: 0.8 },
@@ -25,7 +26,7 @@ const Hero = ({ name, date }) => {
       flexDirection: 'column',
       justifyContent: 'center',
       alignItems: 'center',
-      background: 'transparent', // Important: let App.jsx handle the gradient
+      background: 'transparent',
       color: 'white',
       margin: 0,
       textAlign: 'center',
@@ -33,7 +34,7 @@ const Hero = ({ name, date }) => {
       position: 'relative'
     }}>
       
-      {/* Background Hearts remain in place */}
+      {/* Background Hearts */}
       {hearts.map((_, i) => (
         <motion.div
           key={i}
@@ -52,13 +53,13 @@ const Hero = ({ name, date }) => {
         </motion.div>
       ))}
 
-      {/* 2. High-Visibility Polaroid Images */}
+      {/* Polaroid Image Collage */}
       {collageImages.map((img, index) => (
         <motion.div
           key={index}
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ 
-            opacity: 1, // Boosted to full visibility
+            opacity: 1,
             scale: 1,
             y: [0, 15, 0], 
           }}
@@ -73,10 +74,10 @@ const Hero = ({ name, date }) => {
             right: img.right,
             bottom: img.bottom,
             width: img.size,
-            height: 'auto', // Height follows content
-            padding: '8px 8px 30px 8px', // Classic Polaroid look
+            height: 'auto',
+            padding: '8px 8px 30px 8px',
             background: 'white', 
-            boxShadow: '0 20px 40px rgba(0,0,0,0.6)', // Heavy shadow for clarity
+            boxShadow: '0 20px 40px rgba(0,0,0,0.6)',
             transform: `rotate(${img.rotate}deg)`,
             zIndex: 5,
           }}
@@ -86,7 +87,7 @@ const Hero = ({ name, date }) => {
             alt={`Memory ${index + 1}`} 
             style={{ 
                 width: '100%', 
-                height: img.size, // Square-ish crop
+                height: img.size,
                 objectFit: 'cover',
                 display: 'block'
             }} 

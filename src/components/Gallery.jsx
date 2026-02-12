@@ -5,19 +5,19 @@ const Gallery = () => {
   const [selectedMedia, setSelectedMedia] = useState(null);
 
   const media = [
-    { id: 1, type: 'image', url: 'src/assets/images/fm1.jpeg', caption: 'First Meeting' },
-    { id: 2, type: 'image', url: 'src/assets/images/fd1.jpeg', caption: 'Our First Date' },
-    { id: 3, type: 'image', url: 'src/assets/images/cf1.jpeg', caption: 'Confession Day' },
-    { id: 4, type: 'image', url: 'src/assets/images/cf2.jpeg', caption: 'You wrote this note for me' },
-    { id: 5, type: 'image', url: 'src/assets/images/vc1.jpeg', caption: 'Our First Video Call' },
-    { id: 6, type: 'video', url: 'src/assets/videos/vid1.mp4', caption: 'Our First Video' },
-    { id: 7, type: 'video', url: 'src/assets/videos/vid2.mp4', caption: '4 Jan 2026 - Our First Kiss' },
-    { id: 8, type: 'image', url: 'src/assets/images/thenvsnow.jpeg', caption: 'Our first pic vs now' },
-    { id: 9, type: 'image', url: 'src/assets/images/cc.jpeg', caption: 'You wore my Dupatta' },
-    { id: 10, type: 'image', url: 'src/assets/images/fc.jpeg', caption: 'Cute Posing' },
-    { id: 11, type: 'image', url: 'src/assets/images/fc2.jpeg', caption: 'Impress krne ki taiyari' },
-    { id: 12, type: 'image', url: 'src/assets/images/click1.jpeg', caption: 'My baby taking my pic' },
-    { id: 13, type: 'image', url: 'src/assets/images/click2.jpeg', caption: "Me taking my baby's pic" },
+    { id: 1, type: 'image', url: '/images/fm1.jpeg', caption: 'First Meeting' },
+    { id: 2, type: 'image', url: '/images/fd1.jpeg', caption: 'Our First Date' },
+    { id: 3, type: 'image', url: '/images/cf1.jpeg', caption: 'Confession Day' },
+    { id: 4, type: 'image', url: '/images/cf2.jpeg', caption: 'You wrote this note for me' },
+    { id: 5, type: 'image', url: '/images/vc1.jpeg', caption: 'Our First Video Call' },
+    { id: 6, type: 'video', url: '/videos/vid1.mp4', caption: 'Our First Video' },
+    { id: 7, type: 'video', url: '/videos/vid2.mp4', caption: '4 Jan 2026 - Our First Kiss' },
+    { id: 8, type: 'image', url: '/images/thenvsnow.jpeg', caption: 'Our first pic vs now' },
+    { id: 9, type: 'image', url: '/images/cc.jpeg', caption: 'You wore my Dupatta' },
+    { id: 10, type: 'image', url: '/images/fc.jpeg', caption: 'Cute Posing' },
+    { id: 11, type: 'image', url: '/images/fc2.jpeg', caption: 'Impress krne ki taiyari' },
+    { id: 12, type: 'image', url: '/images/click1.jpeg', caption: 'My baby taking my pic' },
+    { id: 13, type: 'image', url: '/images/click2.jpeg', caption: "Me taking my baby's pic" },
   ];
 
   return (
@@ -89,7 +89,6 @@ const Gallery = () => {
         </div>
       </div>
 
-      {/* POP-UP PREVIEW */}
       <AnimatePresence>
         {selectedMedia && (
           <motion.div

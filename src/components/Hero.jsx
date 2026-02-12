@@ -11,11 +11,11 @@ const Hero = ({ name, date }) => {
   
   // Updated src paths to point to /images/ inside the public folder
   const collageImages = [
-    { src: 'src/assets/images/img1.jpeg', top: '8%', left: '8%', rotate: -8, size: '150px', delay: 0 },
-    { src: 'src/assets/images/img2.jpeg', top: '12%', right: '10%', rotate: 6, size: '130px', delay: 0.8 },
-    { src: 'src/assets/images/img3.jpeg', bottom: '12%', left: '10%', rotate: -4, size: '170px', delay: 0.4 },
-    { src: 'src/assets/images/img4.jpeg', bottom: '18%', right: '8%', rotate: 10, size: '140px', delay: 1.2 },
-    { src: 'src/assets/images/img5.jpeg', top: '45%', right: '4%', rotate: -2, size: '120px', delay: 1.5 },
+    { src: 'images/img1.jpeg', top: '8%', left: '8%', rotate: -8, size: '150px', delay: 0 },
+    { src: 'images/img2.jpeg', top: '12%', right: '10%', rotate: 6, size: '130px', delay: 0.8 },
+    { src: 'images/img3.jpeg', bottom: '12%', left: '10%', rotate: -4, size: '170px', delay: 0.4 },
+    { src: 'images/img4.jpeg', bottom: '18%', right: '8%', rotate: 10, size: '140px', delay: 1.2 },
+    { src: 'images/img5.jpeg', top: '45%', right: '4%', rotate: -2, size: '120px', delay: 1.5 },
   ];
 
   return (

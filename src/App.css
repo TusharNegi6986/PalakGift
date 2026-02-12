@@ -1,0 +1,53 @@
+:root {
+  /* Using a Radial Gradient to match the 'glow' from your Hero screenshot */
+  --midnight-gradient: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%);
+  --accent-gold: #fbbf24;
+  --soft-red: #ff4d6d;
+}
+
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  /* 'fixed' ensures the gradient stays still while the content moves over it */
+  background: var(--midnight-gradient) fixed; 
+  color: white;
+  font-family: 'Inter', 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Ensure the app container doesn't block the body background */
+.birthday-app {
+  background: transparent !important;
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+/* Updated Navbar for a softer, premium feel */
+.navbar {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  background: rgba(15, 23, 42, 0.4);
+  backdrop-filter: blur(12px);
+  padding: 10px 25px;
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: var(--accent-gold);
+}
